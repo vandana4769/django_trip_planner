@@ -1,0 +1,1 @@
+A trip planner website with differnt destinations and user accounts etc
