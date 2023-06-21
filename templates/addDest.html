@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Add Destination</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <form action ='addDest' method="post"  enctype="multipart/form-data"> 
+        <!-- enctype=multipart/form-data The type that allows file <input> element(s) to upload file data. -->
+        <!-- With out this type it throws MultivaluedictKey error -->
+        {% csrf_token %}
+        Destination Name : <input type="text"  name = 'name'><br>
+        Description : <input type="text" name = 'desc'><br>
+        Price :<input type="number" name = 'price'><br>
+        Upload image: <input type="file" name="img" ><br>
+        Has offer : <input type="checkbox"  name = 'offer'><br>
+        <input type="submit" >
+
+    </form>
+    <div>
+        {% for message in messages %}
+        <h3> {{ message }} </h3>
+        {% endfor %}
+    </div>
+    
+    
+</body>
+</html>
