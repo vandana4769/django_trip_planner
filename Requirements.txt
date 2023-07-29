@@ -1,1 +1,2 @@
 Django==2.0
+postgreSQL == 3.0
