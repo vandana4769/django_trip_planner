@@ -1,3 +1,4 @@
 Django==2.0
 postgreSQL == 3.0
 pgadmin == 4.0
+re == 5.0
