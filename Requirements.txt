@@ -4,3 +4,5 @@ pgadmin == 4.0
 re == 5.0
 requests == 2.13
 hello
+
+This app helps to book a trip.
